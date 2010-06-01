@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "deploy_version"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{keep track of which version is being deployed.}
+    gem.description = %Q{Encapsulation for deploy version}
     gem.email = "kazu.dev@gmail.com"
     gem.homepage = "http://github.com/ktlacaelel/deploy_version"
     gem.authors = ["kazuyoshi tlacaelel"]
