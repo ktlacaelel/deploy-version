@@ -31,8 +31,10 @@ module Deploy
       raise Error.not_implemented
     end
 
-    def store_to_file
-      raise Error.not_implemented
+    def store_to_file(filename)
+      File.open(filename, 'w+') do |file|
+        file.puts export
+      end
     end
 
     def time_zone=(value = 'EST')
