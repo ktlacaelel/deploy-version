@@ -5,11 +5,11 @@ Keep track of which version is being deployed.
 
 == Example usage
 
-require 'deploy_version'
-v = Deploy::Version.new
-v.deployed_by = 'kazu'
-v.current_version = '1.100.0'
-v.store_to_file 'version.yml'
+  require 'deploy_version'
+  v = Deploy::Version.new
+  v.deployed_by = 'kazu'
+  v.current_version = '1.100.0'
+  v.store_to_file 'version.yml'
 
 == Example output
 
