@@ -1,0 +1,26 @@
+= Deploy Version
+
+
+Keep track of which version is being deployed.
+
+== Example usage
+
+require 'deploy_version'
+v = Deploy::Version.new
+v.deployed_by = 'kazu'
+v.current_version = '1.100.0'
+v.store_to_file 'version.yml'
+
+== Example output
+
+  File: version.yml
+
+
+  ---
+  :current_version: 1.100.0
+  :deployed_by: kazu
+  :deployed_time: 2010-06-01 13:05:01.900989 -05:00
+
+== License:
+
+  MIT. See the "LICENSE" file for details.
