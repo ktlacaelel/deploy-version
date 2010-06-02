@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'active_support'
+require 'yaml'
 
 module Deploy
 
@@ -46,12 +47,16 @@ module Deploy
       @deployed_time
     end
 
-    def export
+    def to_h
       {
         :current_version => @current_version,
         :deployed_by => @deployed_by,
         :deployed_time => deployed_time
-      }.to_yaml
+      }
+    end
+
+    def export
+      YAML::dump(to_h)
     end
 
   end
