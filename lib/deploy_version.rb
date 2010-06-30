@@ -25,11 +25,11 @@ module Deploy
     end
 
     def load_from_url
-      raise Error.not_implemented
+      raise Error.not_implemented 'load_from_url'
     end
 
     def load_from_file
-      raise Error.not_implemented
+      raise Error.not_implemented 'load_from_file'
     end
 
     def store_to_file(filename)
