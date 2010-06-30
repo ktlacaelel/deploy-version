@@ -22,6 +22,7 @@ module Deploy
 
     def initialize
       @deployed_time = Time.now
+      @custom_values = {}
     end
 
     def load_from_url
@@ -47,11 +48,16 @@ module Deploy
       @deployed_time
     end
 
+    def add key, value
+      @custom_values[key] = value
+    end
+
     def to_h
       {
         :current_version => @current_version,
         :deployed_by => @deployed_by,
-        :deployed_time => deployed_time
+        :deployed_time => deployed_time,
+        :custom_values => @custom_values
       }
     end
 
