@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{deploy_version}
-  s.version = "0.0.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["kazuyoshi tlacaelel"]
-  s.date = %q{2010-06-01}
-  s.description = %q{ Encapsulation for deploy version }
+  s.date = %q{2010-06-30}
+  s.description = %q{Encapsulation for deploy version}
   s.email = %q{kazu.dev@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "deploy_version.gemspec",
      "lib/deploy_version.rb",
      "test/helper.rb",
      "test/test_deploy_version.rb"
@@ -31,7 +32,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Keep track of which version is being deployed.}
+  s.summary = %q{keep track of which version is being deployed.}
   s.test_files = [
     "test/helper.rb",
      "test/test_deploy_version.rb"
